@@ -1,48 +1,149 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Project: Recipe book</title>
-        <meta charset="utf-8">
-        <style>
-        </style>
-    </head>
-    <body>
-       
-        <h1>Sravanthi's Recipe Book</h1>
-        
-        <h2>Contents:</h2>
-        
-        <ol>
-            <li><a href="?">Recipe #1</a></li>
-        </ol>
-        
-        <h2 id="?">Recipe #1</h2>
-        
-        <ul>
-            <li>Time: _</li>
-            <li>Serves: _</li>
-        </ul>
-        
-        <p>Biryani recipe</p>
-<p>Marinate chicken for 30 minutes or more, For marination: Add turmeric, ginger and garlic paste, chilli powder, salt, coriander powder, garam masala, slit green chillies(2 or 3), coriander leaves, pudina leaves, yougurt(optional)
-Preparation: Add cumin seeds, chillies , curry leaves in the oil then add onions, when onions are brown add  one or two tomatoes and when they are mushy and soft ,add marinated chicken and cook for 20 min.
-For rice, add some ghee, bay leaves, 2 or 3 chillies depending on the spice you add in the chicken , garam masala, coriander powder, water ,boil , add rice and cook 70-80%.... take oven pan and layer chicken and rice alternatively along with fried onions , coriander leaves and saffron.Bake at 300 for 20-30 minutes depending on how well you cooked chicken on stove top.</p>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        
-        <p><strong>Step 1:</strong> Do something.
-</p>
-        
-    <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-    
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Koppola - Apps</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .app-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent-color);
+        }
+
+        .app-icon-placeholder {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #FFCC00 0%, #006400 100%);
+            border-radius: 14px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .app-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-desc {
+            font-size: 0.95rem;
+            color: #8b949e;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Raj Koppola</h1>
+            <p class="subtitle">Building high-quality iOS experiences.</p>
+        </header>
+
+        <div class="apps-grid">
+
+            <!-- App 1: Boundaries Marker -->
+            <a href="/boundaries-marker/" class="app-card">
+                <div class="app-icon-placeholder">🏏</div>
+                <h3 class="app-title">Boundaries Marker</h3>
+                <p class="app-desc">
+                    Setup cricket field boundaries in minutes using AR. Precise measurements and visual guidance.
+                </p>
+            </a>
+
+            <!-- More apps can be added here -->
+
+        </div>
+
+        <footer>
+            <p>
+                Contact: <a href="mailto:rkoppol@gmail.com">rkoppol@gmail.com</a>
+            </p>
+            <p>&copy; 2026 Raj Koppola.</p>
+        </footer>
+    </div>
+
+</body>
+
 </html>
