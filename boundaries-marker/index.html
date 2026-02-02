@@ -111,6 +111,14 @@
             display: none;
             /* Hidden until we have images */
         }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+        }
     </style>
 </head>
 
@@ -118,6 +126,7 @@
 
     <header>
         <div class="container">
+            <img src="../assets/hero.png" alt="Boundaries Marker Hero" class="hero-image" />
             <h1>Boundaries Marker</h1>
             <p class="tagline">Setup your cricket field boundaries in minutes using AR.</p>
             <a href="#" class="btn">Coming Soon to App Store</a>

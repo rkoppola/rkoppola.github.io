@@ -67,16 +67,12 @@
             border-color: var(--accent-color);
         }
 
-        .app-icon-placeholder {
+        .app-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #FFCC00 0%, #006400 100%);
             border-radius: 14px;
             margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            object-fit: cover;
         }
 
         .app-title {
@@ -125,7 +121,7 @@
 
             <!-- App 1: Boundaries Marker -->
             <a href="/boundaries-marker/" class="app-card">
-                <div class="app-icon-placeholder">🏏</div>
+                <img src="assets/app-icon.png" alt="Boundaries Marker Icon" class="app-icon" />
                 <h3 class="app-title">Boundaries Marker</h3>
                 <p class="app-desc">
                     Setup cricket field boundaries in minutes using AR. Precise measurements and visual guidance.
