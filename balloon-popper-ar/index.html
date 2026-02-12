@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Popper AR - Fun Learning Game for Kids</title>
+    <style>
+        :root {
+            --primary: #007AFF;
+            /* System Blue */
+            --secondary: #FF2D55;
+            /* System Pink */
+            --tertiary: #FFCC00;
+            /* System Yellow */
+            --dark: #121212;
+            --light: #F5F5F5;
+            --gray: #888;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 1rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0, 122, 255, 0.2) 0%, rgba(18, 18, 18, 1) 100%);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        p.tagline {
+            font-size: 1.5rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #0063d1;
+        }
+
+        .features {
+            padding: 4rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            flex: 1 1 300px;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: var(--secondary);
+            /* Pink for titles */
+            margin-top: 0;
+        }
+
+        /* Alternate colors for cards */
+        .feature-card:nth-child(2) h3 {
+            color: var(--tertiary);
+        }
+
+        .feature-card:nth-child(3) h3 {
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+            /* filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5)); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <!-- <img src="../assets/balloon-hero.png" alt="Balloon Popper AR Hero" class="hero-image" /> -->
+            <h1>Balloon Popper AR</h1>
+            <p class="tagline">Pop virtual balloons in your living room! Learn numbers & letters.</p>
+            <a href="#" class="btn">Coming Soon to App Store</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>AR Magic</h3>
+                <p>Turn your floor into a playground! Balloons float realistically in your room, bounce off furniture,
+                    and explode with confetti.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Active Play</h3>
+                <p>No more sitting on the couch! Kids have to move around to pop balloons. Try the "Floor is Lava" mode
+                    for extra fun.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Learn While Playing</h3>
+                <p>Unlock Learning Mode to pop 3D Numbers (1-20) and Letters (A-Z). The app speaks the content aloud for
+                    reinforcement.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: center; padding: 4rem 1rem;">
+        <h2 style="color: var(--primary);">Safe & Secure</h2>
+        <p style="color: var(--gray); max-width: 600px; margin: 0 auto 2rem auto;">
+            Designed for kids with safety in mind. No data collection, COPPA compliant ads, and built-in safe zone
+            boundaries.
+        </p>
+        <a href="privacy-policy.html" class="btn"
+            style="background-color: transparent; border: 2px solid var(--primary); color: var(--primary);">Privacy
+            Policy</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raj Koppola. All rights reserved.</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="mailto:rkoppola@gmail.com">Contact Support</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
